@@ -1,0 +1,134 @@
+:root {
+    --bodycolor : #F5FBFF;
+    --bgcolor : white;
+    --headcolor: #0e66a5;
+    --fontcolor : white;
+    --boxshadow : black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bodycolor);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main {
+    position: relative;
+    width: 70%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 0 25px var(--boxshadow);
+}
+
+.head {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    background: var(--headcolor);
+}
+
+.container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+}
+
+.nav-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 100%;
+    overflow: hidden;
+    background-color: var(--bgcolor);
+}
+
+.nav-container .nav-head {
+    position: relative;
+    width: 100%;
+    height: 66px;
+}
+
+.nav-container .nav-head .menubar-icon{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.nav-container .nav-head .menubar-icon i{
+    font-size: 26px;
+}
+
+.nav-body {
+    width: 100%;
+    height: calc(100% - 66px);
+}
+
+.nav-body .nav-profile {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-body .nav-profile .profile-img {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.nav-body .nav-profile .profile-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav-body .nav-profile .profile-info {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.nav-body .nav-info {
+    margin-top: 30px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.nav-body .nav-info .nav-menu{
+    text-align: center;
+}
+
+.nav-body .nav-info .nav-menu li{
+    vertical-align: middle;
+    padding: 5px;
+}
+
+.nav-body .nav-info .nav-menu li:hover{
+    background-color: var(--bodycolor);
+}
+re
