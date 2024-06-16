@@ -1,27 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js" integrity="sha512-L0Shl7nXXzIlBSUUPpxrokqq4ojqgZFQczTYlGjzONGTDAcLremjwaWv5A+EDLnxhQzY5xUZPWLOLqYRkY0Cbw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Apex Chart -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.49.1/apexcharts.min.js"
+      integrity="sha512-qiVW4rNFHFQm0jHli5vkdEwP4GPSzCSp85J7JRHdgzuuaTg31tTMC8+AHdEC5cmyMFDByX639todnt6cxEc1lQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Custom -->
+    <link rel="stylesheet" href="assets/css/style.css" />
     <script src="assets/script/scripts.js"></script>
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="main">
-        <div class="nav-container">
-
-        </div>
-        <div class="main-container">
-            <div class="main-head-container">
-
-            </div>
-            <div class="main-body-container">
-                
+      <div class="nav-container">
+        <div class="nav-head">
+            <div class="nav-drop" onclick="toggleSidebar()">
+                <i class="fa-solid fa-bars"></i>
             </div>
         </div>
+        <div class="nav-profile">
+            <div class="profile-img">
+                <img src="assets/media/profile.jpg" alt="Profile Photo" title="Profile Photo">
+            </div>
+            <div class="profile-info">
+                <h4>MD.Rayhan Hossain</h4>
+                <p>Student</p>
+            </div>
+        </div>
+        <div class="nav-btn">
+            <ul>
+                <li>
+                  <div class="btn-i"><i class="fa-solid fa-house"></i></div>
+                  <p class="btn-text">Home</p>
+                </li>
+                <li>
+                  <div class="btn-i"><i class="fa-solid fa-circle-info"></i></div>
+                  <p class="btn-text">About</p>
+                </li>
+                <li>
+                  <div class="btn-i"><i class="fa-solid fa-briefcase"></i></i></div>
+                  <p class="btn-text">Protfolio</p>
+                </li>
+                <li>
+                  <div class="btn-i"><i class="fa-solid fa-gears"></i></div>
+                  <p class="btn-text">Experience</p>
+                </li>
+                <li>
+                  <div class="btn-i"><i class="fa-solid fa-phone"></i></div>
+                  <p class="btn-text">Contact</p>
+                </li>
+            </ul>
+        </div>
+      </div>
+      <div class="main-container">
+        <div class="main-head-container">
+          <div class="head-logo">
+            <div class="logo-icon"><i class="fa-brands fa-html5"></i></div>
+            <div class="logo-text">Logo</div>
+          </div>
+          <div class="head-others">
+            <div class="head-resume">
+                <i class="fa-solid fa-download"></i>
+                <span>Resume</span>
+            </div>
+            <div class="head-settings">
+                <i class="fa-solid fa-gear"></i>                
+                <span>Settings</span>
+            </div>
+          </div>
+        </div>
+        <div class="main-body-container"></div>
+      </div>
     </div>
-</body>
+  </body>
 </html>

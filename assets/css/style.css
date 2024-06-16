@@ -9,7 +9,7 @@
 }
 
 body {
-    width: 100%;
+    min-width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -26,14 +26,107 @@ body {
 }
 
 .nav-container {
+    position: relative;
     display: flex;
-    flex: 1 1 100px;
+    width: 300px;
+    flex-direction: column;
     background-color: #fff;
+    transition: all 1s;
+}
+
+.nav-container .nav-head {
+    position: relative;
+    width: 100%;
+}
+
+.nav-container .nav-head .nav-drop {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.nav-container .nav-head .nav-drop i {
+    font-size: 24px;
+}
+
+.nav-container .nav-profile {
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 1s;
+}
+
+.nav-container .nav-profile .profile-img {
+    max-height: 150px;
+    max-width: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 10px black;
+    cursor: pointer;
+}
+
+.nav-container .nav-profile .profile-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav-container .nav-profile .profile-info {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.nav-container .nav-profile .profile-info h4 {
+    font-size: 22px;
+}
+
+.nav-container .nav-profile .profile-info p {
+    font-size: 16px;
+}
+
+.nav-container .nav-btn {
+    position: absolute;
+    bottom: 20px;
+    margin-top: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.nav-container .nav-btn ul {
+    list-style-type: none;
+}
+
+.nav-container .nav-btn li {
+    text-align: left;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.nav-container .nav-btn li .btn-i {
+    display: inline-block;
+    width: 50px;
+    text-align: center;
+}
+
+.nav-container .nav-btn li .btn-text {
+    display: inline;
+}
+
+.nav-container .nav-btn li:hover {
+    background-color: rgba(211, 223, 234, 0.5);
 }
 
 .main-container {
     display: flex;
-    flex: 5 5 100px;
+    width: 100%;
     flex-direction: column;
     background-color: lightgray;
 }
@@ -41,7 +134,59 @@ body {
 .main-container .main-head-container {
     width: 100%;
     height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: skyblue;
+}
+
+.main-head-container .head-logo {
+    margin-left: 10px;
+    display: flex;
+    cursor: pointer;
+}
+
+.main-head-container .head-logo .logo-icon {
+    padding: 5px;
+    height: auto;
+    width: auto;
+}
+
+.main-head-container .head-logo .logo-icon i {
+    font-size: 30px;
+}
+
+.main-head-container .head-logo .logo-text {
+    padding: 5px;
+    height: auto;
+    width: auto;
+    font-size: 30px;
+} 
+
+.main-head-container .head-others {
+    margin-right: 10px;
+    display: flex;
+}
+
+.main-head-container .head-others .head-resume , 
+.main-head-container .head-others .head-settings{
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.main-head-container .head-others .head-resume i,
+.main-head-container .head-others .head-settings i {
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.main-head-container .head-others .head-resume span,
+.main-head-container .head-others .head-settings span {
+    font-size: 18px;
 }
 
 .main-container .main-body-container {
@@ -49,3 +194,27 @@ body {
     height: 90%;
     
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .main-head-container .head-logo .logo-text {
+        display: none;
+    }
+
+    .main-head-container .head-others .head-resume span,
+    .main-head-container .head-others .head-settings span {
+        display: none;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
