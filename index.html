@@ -67,22 +67,53 @@
       </div>
       <div class="main-container">
         <div class="main-head-container">
-          <div class="head-logo">
+          <div class="head-logo" title="Logo">
             <div class="logo-icon"><i class="fa-brands fa-html5"></i></div>
             <div class="logo-text">Logo</div>
           </div>
           <div class="head-others">
-            <div class="head-resume">
+            <div class="head-resume" onclick="resumebar()">
                 <i class="fa-solid fa-download"></i>
-                <span>Resume</span>
+                <span>Resume</span>                
             </div>
-            <div class="head-settings">
+            <div class="head-settings" onclick="settingsbar()">
                 <i class="fa-solid fa-gear"></i>                
                 <span>Settings</span>
             </div>
           </div>
         </div>
-        <div class="main-body-container"></div>
+        <div class="main-body-container">
+          <div class="header-bar">
+            <div class="resume-list" style="display:none;">
+              <ul>
+                <li>Download Resume</li>
+                <li>Make your Resume</li>
+              </ul>
+            </div>
+            <div class="settings-list" style="display:none;">
+              <ul>
+                <li onclick="themedrop()">
+                  <div class="settings-li">
+                    <span>Theme</span>
+                    <i class="fa-solid fa-caret-down theme"></i>
+                  </div>
+                  <div class="theme-bar">
+                    hi
+                  </div>
+                </li>
+                <li onclick="fontdrop()">
+                  <div>
+                    <span>Font</span>
+                    <i class="fa-solid fa-caret-down font"></i>
+                  </div>
+                  <div class="font-bar">
+                    hi
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>
