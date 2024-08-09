@@ -24,19 +24,23 @@ function settingsbar() {
   var bar = document.getElementsByClassName("settings-list")[0] ;
   if (bar.style.display == "none") {
     bar.style.display = "inline-block";
+    document.getElementsByClassName("fa-solid fa-gear")[0].style.color = "blue";
   }
   else {
     bar.style.display = "none";
+    document.getElementsByClassName("fa-solid fa-gear")[0].style.color = "black";
   }
 }
 
 function resumebar() {
   var bar = document.getElementsByClassName("resume-list")[0] ;
   if (bar.style.display == "none") {
-    bar.style.display = "block";
+    bar.style.display = "inline-block";
+    document.getElementsByClassName("fa-solid fa-download")[0].style.color = "blue";
   }
   else {
     bar.style.display = "none";
+    document.getElementsByClassName("fa-solid fa-download")[0].style.color = "black";
   }
 }
 
