@@ -1,3 +1,24 @@
+function wish() {
+  var now = new Date();
+  const hr = now.getHours();
+  var w = 'Evening';
+  if (5 <= hr && hr <= 12) {
+    w = "Morning" ;
+    console.log(w, hr) ;
+  }
+  else if (13 <= hr && hr <= 18) {
+    w = "Afternoon" ;
+    console.log(w, hr) ;
+  }
+  else if (19 <= hr && hr <= 24) {
+    w = "Evening" ;
+    console.log(w, hr) ;
+  }  
+  document.getElementsByClassName('wish')[0].innerHTML = "Good " + w ;
+}
+
+wish()
+
 var sidebar = false;
 function toggleSidebar() {
   if (sidebar == false) {
@@ -54,7 +75,7 @@ function themedrop() {
 
   else {
     document.getElementsByClassName('theme')[0].style.transform = 'rotate(180deg)' ;    
-    document.getElementsByClassName("theme-bar")[0].style.height = '100px' ;       
+    document.getElementsByClassName("theme-bar")[0].style.height = '120px' ;       
     theme = false;
   }
 }
@@ -71,5 +92,36 @@ function fontdrop() {
     document.getElementsByClassName('font')[0].style.transform = 'rotate(180deg)' ;    
     document.getElementsByClassName("font-bar")[0].style.height = '100px' ;       
     font = false;
+  }
+}
+
+const timg = document.getElementsByClassName("body-img");
+// var position_body = ;
+var position = 150;
+var i = 1;
+function imgmoveright() {
+  if (i <= timg.length - 1) {
+    position -= 300 ;
+    document.getElementsByClassName("main-img-body")[0].style.transform = 'translateX('+position+'px)' ;
+    i ++ ;
+  }
+  else {    
+    position = 150 ;
+    document.getElementsByClassName("main-img-body")[0].style.transform = 'translateX('+position+'px)' ;    
+    i = 1 ;
+  }
+}
+
+function imgmoveleft() {
+  console.log(position,i)
+  if (i > 1) {
+    position += 300 ;
+    document.getElementsByClassName("main-img-body")[0].style.transform = 'translateX('+position+'px)' ;
+    i -- ;
+  }
+  else {    
+    position = 150 ;
+    document.getElementsByClassName("main-img-body")[0].style.transform = 'translateX('+position+'px)' ;    
+    i = 1 ;
   }
 }

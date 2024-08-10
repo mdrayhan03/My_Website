@@ -279,8 +279,40 @@ body {
     width: auto;
     height: 0px;
     transition: height 1s;
-    background: yellowgreen;
+    background: black;
     overflow: hidden;
+}
+
+.theme-bar .theme-one {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+}
+
+.theme-bar .theme-one .left{
+    width: 30%;
+    height: 100%;
+    background-color: blue;    
+}
+
+.theme-bar .theme-one .right{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.theme-bar .theme-one .right .top{
+    width: 100%;
+    height: 30%;
+    background-color: skyblue;
+}
+
+.theme-bar .theme-one .right .bottom{
+    width: 100%;
+    height: 70%;
+    background-color: wheat;
 }
 
 .main-body-container .settings-list ul li .font-bar{
@@ -292,9 +324,243 @@ body {
 }
 
 .main-body-element {
-    margin: 20px;    
+    width: 100%;
+}
+
+.main-element-home {
+    margin: 20px;
+    height: 400px;
     background-color: #fff;
     box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+
+.main-element-home .home-body {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.main-element-home .home-body .up {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background: skyblue;
+}
+
+.main-element-home .home-body .up h1 {
+    position: absolute;
+    bottom: 5px;
+    left: 100px;
+}
+
+.main-element-home .home-body .down {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 50%;
+}
+
+.main-element-home .home-body .down .text {
+    position: absolute;
+    top: 5px;
+    left: 100px;
+    width: 350px;
+    text-align: justify;
+}
+
+.main-element-home .home-body .down img{
+    width: 300px;
+    position: absolute;
+    right: 0;
+    top: -200px;
+}
+
+.main-element-about {
+    margin: 20px;
+    /* height: 400px; */
+    background-color: #fff;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+
+.main-element-about .about-body {
+    display: flex;
+    flex-direction: column;    
+}
+
+.main-element-about .about-body h3, 
+.main-element-about .about-body h2{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.main-element-about .about-body .first-part{
+    display: flex;    
+}
+
+.main-element-about .about-body .first-part .text {
+    margin: 20px;
+    text-align: justify;
+}
+
+.main-element-about .about-body .first-part .img {
+    width: 300px;    
+}
+
+.main-element-about .about-body .first-part .img img {
+    width: 300px;
+}
+
+.main-element-about .about-body .education-part {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.main-element-about .about-body .education-part h3 {
+    margin: 20px;
+}
+
+.main-element-about .about-body .education-part .education-body {
+    width: 80%;
+    float: right;
+    border-left: 3px solid black;
+}
+
+.main-element-about .about-body .education-part .education-body .education {
+    display: flex;
+    margin-top: 10px;
+}
+
+.main-element-about .about-body .education-part .education-body .education:first-child{
+    margin: 0;
+}
+
+.main-element-about .about-body .education-part .education-body .education .year {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: black;
+    color: white;
+    border-radius: 50%;
+    transform: translateX(-25px);
+}
+
+.main-element-about .about-body .education-part .education-body .education:hover .year {
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.main-element-about .about-body .education-part .education-body .education .info h4 {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.main-element-about .about-body .experience-part {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.main-element-about .about-body .experience-part h3 {
+    margin: 20px;
+}
+
+.main-element-about .about-body .experience-part .experience-body {
+    margin: 20px;
+}
+
+.main-element-about .about-body .second-part {
+    width: 100%;
+}
+
+.main-element-about .about-body .second-part h3 {
+    margin: 20px;
+}
+
+.main-element-about .about-body .second-part .second-body {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 50px 0;
+    width: 100%;
+    height: 200px;
+    /* border: 1px solid black; */
+}
+
+.main-element-about .about-body .second-part .left-arrow ,
+.main-element-about .about-body .second-part .right-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.main-element-about .about-body .second-part .main-img{
+    display: flex;
+    align-items: center;    
+    width: 600px; 
+    height: 100%;    
+    overflow: hidden;    
+}
+
+.main-element-about .about-body .second-part .main-img .main-img-body {
+    display: flex;
+    height: 200px;
+    transform: translateX(150px);
+    transition: 1s;
+}
+
+.main-element-about .about-body .second-part .main-img .main-img-body img{
+    width: 300px;
+    height: 100%;
+}
+
+.main-element-strength {
+    margin: 20px;
+    /* height: 400px; */
+    background-color: #fff;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+
+.main-element-strength .strength-body .second-part {
+    margin: 20px;   
+}
+
+.main-element-strength .strength-body .second-part .second-body {
+    height: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(0,0,0,0.8);
+    background-image: url("assets/media/home.png");
+}
+
+.main-element-strength .strength-body .second-part .second-body .element i{
+    padding: 5px;
+    font-size: 82px;
+    color: white;
+}
+
+.main-element-strength .strength-body .skill-part {
+    margin-top: 20px;
+}
+
+.main-element-strength .strength-body .skill-part h3 {
+    margin: 20px;
+}
+
+.main-element-strength .strength-body .skill-part .skill-body{
+    display: flex;
+}
+
+.main-element-strength .strength-body .skill-part .skill-body .chart{
+    width: 30%;
 }
 
 /* Extra small devices (phones, 600px and down) */

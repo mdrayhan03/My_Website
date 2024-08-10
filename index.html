@@ -12,8 +12,7 @@
       referrerpolicy="no-referrer"
     />    
     <!-- Custom -->
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <script src="assets/script/scripts.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css" />    
     <title>Document</title>
   </head>
   <body>
@@ -91,7 +90,13 @@
                     <i class="fa-solid fa-caret-down theme"></i>
                   </div>
                   <div class="theme-bar">
-                    hi
+                    <div class="theme-one">
+                      <div class="left"></div>
+                      <div class="right">
+                        <div class="top"></div>
+                        <div class="bottom"></div>
+                      </div>
+                    </div>
                   </div>
                 </li>
                 <li onclick="fontdrop()">
@@ -108,39 +113,118 @@
           </div>
           <div class="main-body-element">
             <div class="main-element-home">
-              <h2>Home</h2>
-              <h2>Home</h2>
-              <h2>Home</h2>
-              <h2>Home</h2>
-              <h2>Home</h2>
-              <h2>Home</h2>
-              <h2>Home</h2>
-              <h2>Home</h2>
-              <h2>Home</h2>
-              <h2>Home</h2>
-              <h2>Home</h2>
-              <h2>Home</h2>
-              <h2>Home</h2>
-              <h2>Home</h2>
-              <h2>Home</h2>
-              <h2>Home</h2>
-              <h2>Home</h2>
-              <h2>Home</h2>
-              <h2>Home</h2>
-              <h2>Home</h2>
-              <h2>Home</h2>
-              <h2>Home</h2>
-              <h2>Home</h2>
-              <h2>Home</h2>
+              <div class="home-body">
+                <div class="up">
+                  <h1 class="wish"></h1>
+                </div>              
+                <div class="down">
+                  <div class="text">
+                    <h2>Welcome</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum impedit eveniet recusandae optio possimus. Numquam blanditiis, fugiat hic eveniet consequuntur, magni provident praesentium laborum dolores laudantium iste corrupti dicta sint.</p>
+                  </div>
+                  <img src="assets/media/home.png" alt="">
+                </div>
+              </div>
             </div>
-            <div class="main-element-home">
-              <h2>Home</h2>
+            <div class="main-element-about">
+              <div class="about-body">
+                <h2>About me</h2>
+                <h3>Md Rayhan Hossain | CSE Student & Aspiring Developer</h3>
+                <div class="first-part">                  
+                  <div class="text">                    
+                    <p>I'm Md Rayhan Hossain, a dedicated Computer Science and Engineering student from Bangladesh with a passion for coding and problem-solving. My journey in CSE is driven by my love for technology and the endless possibilities it offers. I enjoy diving into code, learning new programming languages, and working on projects that challenge my skills. My department is my second home, where I thrive on collaboration and innovation. I'm excited to continue exploring the world of technology and contribute to meaningful solutions.</p>
+                    <p style="margin-top: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ipsam odit beatae nostrum pariatur impedit veritatis natus quas animi eligendi iste dolorem nesciunt facere magni nisi, ea deserunt doloribus sunt.</p>
+                  </div>
+                  <div class="img">
+                    <img src="assets/media/home.png" alt="">
+                  </div>
+                </div>
+                <div class="education-part">
+                  <h3>Education</h3>
+                  <div class="education-body">                    
+                    <div class="education">
+                      <div class="year">2022</div>
+                      <div class="info">
+                        <h4>Independent University, Bangladesh</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe, accusantium!</p>
+                      </div>
+                    </div>
+                    <div class="education">
+                      <div class="year">2022</div>
+                      <div class="info">
+                        <h4>Jatir Janak Bangabandhu Sheikh Mujibur Rahman Govt. College</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe, accusantium!</p>
+                      </div>
+                    </div>
+                    <div class="education">
+                      <div class="year">2022</div>
+                      <div class="info">
+                        <h4>Satarkul School & College</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe, accusantium!</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="experience-part">
+                  <h3>Experience</h3>
+                  <div class="experience-body">
+                    None
+                  </div>
+                </div>
+                <div class="second-part">
+                  <h3>Hobbies</h3>
+                  <div class="second-body">
+                    <div class="left-arrow" onclick=imgmoveleft()><i class="fa-solid fa-arrow-left"></i></div>
+                    <div class="main-img">
+                    <div class="main-img-body">
+                        <img class="body-img" src="assets/media/one.png" alt="">
+                        <img class="body-img" src="assets/media/two.png" alt="">
+                        <img class="body-img" src="assets/media/three.png" alt="">
+                        <img class="body-img" src="assets/media/four.png" alt="">
+                    </div>
+                    </div>
+                    <div class="right-arrow" onclick=imgmoveright()><i class="fa-solid fa-arrow-right"></i></div>
+                  </div>
+                </div>
+              </div>              
+            </div>
+            <div class="main-element-strength">
+              <div class="strength-body">
+                <div class="first-part">
+                  <h3>What I Do</h3>
+                  <div class="first-body">
+                      Software Design, Webapp Design, Website Design
+                  </div>
+                </div>
+                <div class="second-part">
+                  <div class="second-body">
+                    <div class="element">
+                      <i class="fa-regular fa-face-smile-beam"></i>Happy Client
+                    </div>
+                    <div class="element">
+                      <i class="fa-regular fa-circle-check"></i>Project Done
+                    </div>
+                    <div class="element">
+                      <i class="fa-solid fa-award"></i>Reward
+                    </div>
+                  </div>
+                </div>
+                <div class="skill-part">
+                  <h3>Skills</h3>
+                  <div class="skill-body">
+                    <div class="chart" id="django"></div>
+                    <div class="chart" id="html"></div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </body>
+  <!-- custom script -->
+  <script src="assets/script/scripts.js"></script>
   <!-- Apex Chart -->
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.49.1/apexcharts.min.js"
@@ -148,4 +232,5 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer">
   </script>
+  <script src="assets/script/chart.js"></script>
 </html>
