@@ -4,15 +4,12 @@ function wish() {
   var w = 'Evening';
   if (5 <= hr && hr <= 12) {
     w = "Morning" ;
-    console.log(w, hr) ;
   }
   else if (13 <= hr && hr <= 18) {
     w = "Afternoon" ;
-    console.log(w, hr) ;
   }
   else if (19 <= hr && hr <= 24) {
     w = "Evening" ;
-    console.log(w, hr) ;
   }  
   document.getElementsByClassName('wish')[0].innerHTML = "Good " + w ;
 }
@@ -123,5 +120,14 @@ function imgmoveleft() {
     position = 150 ;
     document.getElementsByClassName("main-img-body")[0].style.transform = 'translateX('+position+'px)' ;    
     i = 1 ;
+  }
+}
+
+var cnt = 1
+function load_protfolio() {
+  cnt ++ ;
+  if (cnt <= 2) {
+    var ele = document.getElementsByClassName("all-element")[0];
+    ele.style.height = 320 * cnt + "px";
   }
 }

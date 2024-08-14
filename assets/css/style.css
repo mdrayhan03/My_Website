@@ -16,6 +16,11 @@ body {
     align-items: center;
     overflow: hidden;
     background-color: rgb(211, 223, 234);
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Playfair Display', serif;
 }
 
 .main {
@@ -210,6 +215,7 @@ body {
     top: 0;
     right: 5px;
     display: flex;
+    z-index: 10;
 }
 
 .main-body-container .resume-list {
@@ -217,7 +223,8 @@ body {
     padding: 5px;
     width: auto;
     height: 50px;
-    background-color: #fff;
+    background-color: rgba(255,255,255,0.3);
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
     transition: all 1s;
 }
 
@@ -325,6 +332,7 @@ body {
 
 .main-body-element {
     width: 100%;
+    z-index: -1;
 }
 
 .main-element-home {
@@ -339,7 +347,6 @@ body {
     display: flex;
     flex-direction: column;
 }
-
 
 .main-element-home .home-body .up {
     position: relative;
@@ -528,6 +535,29 @@ body {
     overflow: hidden;
 }
 
+.main-element-strength .strength-body .first-part {
+    margin: 20px;
+}
+
+.main-element-strength .strength-body .first-part .first-body {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.main-element-strength .strength-body .first-part .first-body .element{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+/* .main-element-strength .strength-body .first-part .first-body .element:hover {
+    transform: rotateY('90deg');
+} */
+
 .main-element-strength .strength-body .second-part {
     margin: 20px;   
 }
@@ -539,6 +569,11 @@ body {
     align-items: center;
     background-color: rgba(0,0,0,0.8);
     background-image: url("assets/media/home.png");
+}
+
+.main-element-strength .strength-body .second-part .second-body .element {
+    text-align: center;
+    color: white;
 }
 
 .main-element-strength .strength-body .second-part .second-body .element i{
@@ -563,6 +598,170 @@ body {
     width: 30%;
 }
 
+.main-element-protfolio {
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+
+.main-element-protfolio h3 {
+    margin: 20px;
+}
+
+.main-element-protfolio .protfolio-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+}
+
+.main-element-protfolio .protfolio-body .all-element {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 5px;
+    padding: 10px;
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+}
+
+.main-element-protfolio .protfolio-body .all-element .element {
+    height: 150px;    
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+.main-element-protfolio .protfolio-body .load-button {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.main-element-protfolio .protfolio-body .load-button button {
+    width: 100%;
+    height: 30px;
+    background-color: hotpink;
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.main-element-contact {
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+
+.main-element-contact h3 {
+    margin: 20px;
+}
+
+.main-element-contact .first-part {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    margin: 20px;
+}
+
+.main-element-contact .first-part .element {
+    cursor: pointer;
+}
+
+.main-element-contact .first-part .element a {
+    color: black;
+    text-decoration: none;
+}
+
+.main-element-contact .first-part .element:hover {
+    color: blueviolet;
+}
+
+.main-element-contact .first-part .element:hover a{
+    color: blueviolet;
+}
+
+.main-element-contact .second-part {
+    margin-top: 20px;
+}
+
+.main-element-contact .second-part .second-body .review .review-body .name-div {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 10px;
+    padding: 0 20px;
+}
+
+.main-element-contact .second-part .second-body .review .review-body .name-div input {
+    padding: 10px;
+    width: 100%;
+    font-size: 18px;
+    border: 0px;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.main-element-contact .second-part .second-body .review .review-body .name-div textarea {
+    padding: 10px;
+    height: 150px;
+    font-size: 18px;
+    border: 0px;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.1);
+}
+
+
+.main-element-contact .second-part .second-body .review .review-body .rating {
+    display: flex;
+    direction: row-reverse;
+    justify-content: center;
+}
+
+.main-element-contact .second-part .second-body .review .review-body .rating input {
+    display: none;
+}
+
+.main-element-contact .second-part .second-body .review .review-body .rating label {
+    font-size: 2rem;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+
+.main-element-contact .second-part .second-body .review .review-body .rating input:checked ~ label {
+    color: gold;
+}
+
+.main-element-contact .second-part .second-body .review .review-body .rating input:hover ~ label {
+    color: gold;
+}
+
+.main-element-contact .second-part .second-body .review .review-body button {
+    margin: 20px;
+    padding: 10px;
+    background-color: hotpink;
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+}
+
+.main-element-contact .second-part .second-body .review .review-body button:hover {
+    background-color: pink;
+}
+
+.main-element-contact .second-part .second-body .location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.main-element-contact .second-part .second-body .location iframe {
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .main {
@@ -585,13 +784,6 @@ body {
     }
     .nav-container {
         width: 50px;
-    }
-    .nav-container .nav-head .nav-drop {
-        right: -50px;
-    }
-
-    .main-head-container .head-logo {
-        margin-left: 60px;
     }
 }
 
