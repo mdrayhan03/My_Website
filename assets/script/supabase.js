@@ -3,9 +3,9 @@ const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS
 const base = supabase.createClient(supabaseUrl, supabaseKey);
 
 // Use the 'supabase' variable here
-// supabase.from('your_table_name').select('*')
-//   .then(response => console.log(response))
-//   .catch(error => console.error('Error:', error));
+base.from('tb_review').select('*')
+  .then(response => console.log(response))
+  .catch(error => console.error('Error:', error));
 
 
 

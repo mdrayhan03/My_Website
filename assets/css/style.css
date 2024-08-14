@@ -452,7 +452,7 @@ h1,h2,h3,h4,h5,h6 {
     background: black;
     color: white;
     border-radius: 50%;
-    transform: translateX(-25px);
+    transform: translateX(-50%);
 }
 
 .main-element-about .about-body .education-part .education-body .education:hover .year {
@@ -784,6 +784,17 @@ h1,h2,h3,h4,h5,h6 {
     }
     .nav-container {
         width: 50px;
+    }
+    .main-element-home .home-body .down img {
+        width: 150px;
+        top: 0;
+    }
+    .main-element-home .home-body .up h1 {
+        left: 20px;
+    }
+    .main-element-home .home-body .down .text {
+        left: 20px;
+        width: 150px;
     }
 }
 
