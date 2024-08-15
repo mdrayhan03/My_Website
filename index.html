@@ -242,9 +242,6 @@
                   <div class="element"></div>
                   <div class="element"></div>
                 </div>
-                <div class="load-button">
-                  <button onclick=load_protfolio()>Load more</button>
-                </div>
               </div>
             </div>
             <div class="main-element-contact">
@@ -269,7 +266,7 @@
                         <form id="review-form">
                         <div class="name-div">
                           <p>Your Name</p>
-                          <input type="text" id="name-input" placeholder="your name here">
+                          <input type="text" id="name-input" placeholder="your name here" required>
                           <p>Your Email</p>
                           <input type="email" id="email-input" placeholder="your email here" required>
                           <p>Comment</p>
@@ -295,17 +292,19 @@
                     <div class="comment">
                       <h3>Comments</h3>
                       <div class="buttons">
-                        <p>Rating: </p>
-                        <button>All★</button>
-                        <button>5★</button>
-                        <button>4★</button>
-                        <button>3★</button>
-                        <button>2★</button>
-                        <button>1★</button>                        
+                        <p class="rate"></p>
+                        <div>
+                          <select name="" id="rating-val">
+                            <option value="0">-- All --</option>
+                            <option value="1">1★</option>
+                            <option value="2">2★</option>
+                            <option value="3">3★</option>
+                            <option value="4">4★</option>
+                            <option value="5">5★</option>
+                          </select>                        
+                        </div>
                       </div>
-                      <div class="comment-body">
-                        
-                      </div>
+                      <div class="comment-body"></div>
                     </div>
                   </div>
                 </div>
@@ -318,7 +317,7 @@
   </body>
   <!-- custom script -->
   <script src="assets/script/scripts.js"></script>
-  <script src="assets/script/reviewform.js"></script>
+  <!-- <script src="assets/script/reviewform.js"></script> -->
   <!-- Apex Chart -->
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.49.1/apexcharts.min.js"

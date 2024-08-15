@@ -232,7 +232,7 @@ h1,h2,h3,h4,h5,h6 {
     padding: 5px;
     width: auto;
     height: 50px;
-    background-color: rgba(255,255,255,0.3);
+    background-color: #fff;
     box-shadow: 0 0 5px rgba(0,0,0,0.3);
     transition: all 1s;
 }
@@ -375,7 +375,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .main-element-home .home-body .down .text {
     margin-left: 20px;
-    width: 450px;
+    /* width: 450px; */
     text-align: justify;
 }
 
@@ -405,7 +405,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .main-element-about .about-body .first-part{
-    display: flex;    
+    display: flex;
 }
 
 .main-element-about .about-body .first-part .text {
@@ -496,7 +496,7 @@ h1,h2,h3,h4,h5,h6 {
     align-items: center;
     margin: 50px 0;
     width: 100%;
-    height: 200px;
+    height: auto;
     /* border: 1px solid black; */
 }
 
@@ -521,8 +521,7 @@ h1,h2,h3,h4,h5,h6 {
 .main-element-about .about-body .second-part .main-img{
     display: flex;
     align-items: center;    
-    width: 600px; 
-    height: 100%;    
+    width: 80%;     
     overflow: hidden;    
 }
 
@@ -631,32 +630,15 @@ h1,h2,h3,h4,h5,h6 {
     gap: 5px;
     padding: 10px;
     width: 100%;
-    height: 320px;
-    overflow: hidden;
+    height: 400px;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
 }
 
 .main-element-protfolio .protfolio-body .all-element .element {
     height: 150px;    
     box-shadow: 0 0 5px rgba(0,0,0,0.3);
-}
-
-.main-element-protfolio .protfolio-body .load-button {
-    width: 100%;
-    margin-top: 20px;
-}
-
-.main-element-protfolio .protfolio-body .load-button button {
-    width: 100%;
-    height: 30px;
-    background-color: hotpink;
-    color: white;
-    border: 0px;
-    border-radius: 5px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.3);
-}
-
-.main-element-protfolio .protfolio-body .load-button button:hover {
-    background-color: pink;
 }
 
 .main-element-contact {
@@ -788,30 +770,43 @@ h1,h2,h3,h4,h5,h6 {
 .main-element-contact .second-part .second-body .comment .buttons {
     display: flex;
     align-items: center;
-    margin-left: 20px;    
+    justify-content: space-between;
+    margin: 0 20px;    
 }
 
-.main-element-contact .second-part .second-body .comment .buttons p {
-    margin-right: 30px;
-}
-
-.main-element-contact .second-part .second-body .comment .buttons button {
-    margin: 0 10px;
+.main-element-contact .second-part .second-body .comment .buttons select {
     padding: 5px 10px;
-    border: 1px solid black;
-    border-radius: 10px;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 5px;
+    display: none;
 }
 
-.main-element-contact .second-part .second-body .comment .buttons button:hover {
-    background-color: pink;
-}
-
-.main-element-contact .second-part .second-body .comment .buttons button:active {
-    background-color: pink;
-}
 
 .main-element-contact .second-part .second-body .comment .comment-body {
-    margin: 20px;
+    margin: 10px;
+    padding: 10px;
+    height: auto;
+    overflow-y: scroll;    
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+}
+
+.main-element-contact .second-part .second-body .comment .comment-body .element{
+    margin: 5px 0px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.main-element-contact .second-part .second-body .comment .comment-body .element .first-part {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    margin: 0px;
+}
+
+.main-element-contact .second-part .second-body .comment .comment-body .element .first-part h4 {
+    margin: 0;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -853,10 +848,9 @@ h1,h2,h3,h4,h5,h6 {
         width: 50px;
     }
     .main-element-home .home-body .down img {
-        /* transform: scale(0.5); */
         width: 130px;
         height: 100%;        
-        margin-top: 0px;
+        margin-top: -50px;
     }
     .main-element-home .home-body .up {
         height: 70px;
@@ -866,10 +860,27 @@ h1,h2,h3,h4,h5,h6 {
     }
     .main-element-home .home-body .down .text {
         margin-left: 20px;
-        width: 150px;        
     }
     .main-element-about .about-body .first-part .img {
         display: none;
+    }
+    .main-element-about .about-body .second-part .left-arrow {
+        transform: scale(0.7);
+    }
+    .main-element-about .about-body .second-part .left-arrow:hover {
+        transform: scale(0.7);
+    }
+    .main-element-about .about-body .second-part .right-arrow {
+        transform: scale(0.7);
+    }
+    .main-element-about .about-body .second-part .right-arrow:hover {
+        transform: scale(0.7);
+    }
+    .main-element-about .about-body .second-part .main-img .main-img-body {
+        height: 50px;
+    }
+    .main-element-about .about-body .second-part .main-img .main-img-body img {
+        width: 100px;        
     }
     .main-element-protfolio .protfolio-body .all-element {
         grid-template-columns: auto auto;
@@ -884,16 +895,13 @@ h1,h2,h3,h4,h5,h6 {
     .main-element-contact .second-part .second-body .location iframe {
         height: 200px;
     }
-    .main-element-contact .second-part .second-body .comment .buttons button {
-        margin: 0 2px;
-        padding: 2px 4px;
-        border-radius: 5px;
+    .main-element-contact .second-part .second-body .comment .buttons select {
         font-size: 11px;
     }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 992px) {
+@media only screen and (min-width: 600px) {
     h1 {
         font-size: 25px;
     }
@@ -908,6 +916,9 @@ h1,h2,h3,h4,h5,h6 {
     }
     p {
         font-size: 14px;
+    }
+    .nav-container .nav-btn li .btn-text {
+        display: inline;
     }
     .main-element-home .home-body .down img {
         /* transform: scale(0.5); */
@@ -941,29 +952,130 @@ h1,h2,h3,h4,h5,h6 {
         grid-template-columns: auto;
     }
     .main-element-contact .second-part .second-body .location iframe {
-        height: 200px;
+        height: 250px;
     }
-    .main-element-contact .second-part .second-body .comment .buttons button {
-        margin: 0 2px;
-        padding: 2px 4px;
-        border-radius: 5px;
-        font-size: 11px;
+    .main-element-contact .second-part .second-body .comment .buttons select {
+        font-size: 14px;
     }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-/* @media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
+    h1 {
+        font-size: 27px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    h3 {
+        font-size: 22px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 16px;
+    }
     .nav-container .nav-btn li .btn-text {
         display: inline;
     }
-} */
+    .main-element-home .home-body .down img {
+        /* transform: scale(0.5); */
+        width: 220px;
+        height: 100%;
+        margin-top: -80px;        
+    }
+    .main-element-home .home-body .up {
+        height: 100px;
+    }
+    .main-element-home .home-body .up h1 {
+        margin-left: 20px;
+    }
+    .main-element-home .home-body .down .text {
+        margin-left: 20px;
+    }
+    .main-element-about .about-body .first-part .img {
+        width: 130px;
+    }    
+    .main-element-about .about-body .first-part .img img {
+        width: 130px;
+    }
+    .main-element-protfolio .protfolio-body .all-element {
+        grid-template-columns: auto auto;
+        height: 260px;
+    }
+    .main-element-protfolio .protfolio-body .all-element .element {
+        height: 160px;
+    }
+    .main-element-contact .first-part {
+        grid-template-columns: auto;
+    }
+    .main-element-contact .second-part .second-body .location iframe {
+        height: 300px;
+    }
+    .main-element-contact .second-part .second-body .comment .buttons select {
+        font-size: 16px;
+    }
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
-/* @media only screen and (min-width: 992px) {
+@media only screen and (min-width: 992px) {
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 27px;
+    }
+    h3 {
+        font-size: 25px;
+    }
+    h4 {
+        font-size: 22px;
+    }
+    p {
+        font-size: 18px;
+    }
     .nav-container .nav-btn li .btn-text {
         display: inline;
     }
-} */
+    .main-element-home .home-body .down img {
+        /* transform: scale(0.5); */
+        width: 260px;
+        height: 100%;
+        margin-top: -80px;        
+    }
+    .main-element-home .home-body .up {
+        height: 100px;
+    }
+    .main-element-home .home-body .up h1 {
+        margin-left: 20px;
+    }
+    .main-element-home .home-body .down .text {
+        margin-left: 20px;
+    }
+    .main-element-about .about-body .first-part .img {
+        width: 170px;
+    }    
+    .main-element-about .about-body .first-part .img img {
+        width: 170px;
+    }
+    .main-element-protfolio .protfolio-body .all-element {
+        grid-template-columns: auto auto;
+        height: 300px;
+    }
+    .main-element-protfolio .protfolio-body .all-element .element {
+        height: 140px;
+    }
+    .main-element-contact .first-part {
+        grid-template-columns: auto;
+    }
+    .main-element-contact .second-part .second-body .location iframe {
+        height: 350px;
+    }
+    .main-element-contact .second-part .second-body .comment .buttons select {
+        font-size: 18px;
+    }
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {

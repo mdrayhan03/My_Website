@@ -94,40 +94,38 @@ function fontdrop() {
 
 const timg = document.getElementsByClassName("body-img");
 // var position_body = ;
-var position = 150;
+console.log(timg[0].width)
+var position = timg[0].width / 2;
 var i = 1;
 function imgmoveright() {
   if (i <= timg.length - 1) {
-    position -= 300 ;
+    position -= timg[0].width ;
     document.getElementsByClassName("main-img-body")[0].style.transform = 'translateX('+position+'px)' ;
     i ++ ;
   }
   else {    
-    position = 150 ;
+    position = timg[0].width / 2 ;
     document.getElementsByClassName("main-img-body")[0].style.transform = 'translateX('+position+'px)' ;    
     i = 1 ;
   }
+  console.log(position);
 }
 
 function imgmoveleft() {
   console.log(position,i)
   if (i > 1) {
-    position += 300 ;
+    position += timg[0].width ;
     document.getElementsByClassName("main-img-body")[0].style.transform = 'translateX('+position+'px)' ;
     i -- ;
   }
   else {    
-    position = 150 ;
+    position = timg[0].width / 2 ;
     document.getElementsByClassName("main-img-body")[0].style.transform = 'translateX('+position+'px)' ;    
     i = 1 ;
   }
 }
 
-var cnt = 1
-function load_protfolio() {
-  cnt ++ ;
-  if (cnt <= 2) {
-    var ele = document.getElementsByClassName("all-element")[0];
-    ele.style.height = 320 * cnt + "px";
-  }
-}
+
+document.addEventListener('touchmove', function(e) {
+  // Your event handler logic here
+}, { passive: true });
