@@ -62,6 +62,18 @@ function resumebar() {
   }
 }
 
+function downloadCV() {
+  let fileId = "15wUKNAhZ9nIxWgV_Qmd0nQTrjXy1tCi7";
+        let downloadUrl = `https://drive.google.com/uc?export=download&id=${fileId}`;
+
+        let link = document.createElement("a");
+        link.href = downloadUrl;
+        link.download = "MyCV.pdf";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+}
+
 var theme = true ;
 function themedrop() {
   if (theme == false) {
